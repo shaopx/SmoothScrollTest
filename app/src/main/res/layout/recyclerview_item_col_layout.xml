@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/small_height"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/coll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/big_height"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="16dp" >
+
+        <TextView
+            android:id="@+id/word_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="go"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/word_status_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/word_tv"
+            android:layout_marginTop="8dp"
+            android:text="过去式"
+            android:textSize="11sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/expand_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/big_height"
+        android:layout_alignParentTop="true"
+        android:padding="16dp"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/title2_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="1/5"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/add_book2_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="加入生词本"
+            android:textColor="#0000ff"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/word2_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/title2_tv"
+            android:layout_marginTop="16dp"
+            android:text="Go"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/symbl_en_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/word2_tv"
+            android:layout_marginTop="14dp"
+            android:text="英 [Gou] xxxxx"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/symbl_us_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/symbl_en_tv"
+            android:layout_marginTop="14dp"
+            android:text="美 [Gou] xxxxx"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/msg_1_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/symbl_us_tv"
+            android:layout_marginTop="24dp"
+            android:text="有352人阅读了这个单词"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/msg_2_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/msg_1_tv"
+            android:layout_marginTop="8dp"
+            android:text="他们的平均得分为34.0 分"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/read_cycle_tv"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/layout_bg3"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/read_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/read_cycle_tv"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="6dp"
+            android:text="点击跟读"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="#dedede" />
+
+
+</RelativeLayout>
